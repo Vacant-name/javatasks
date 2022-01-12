@@ -18,5 +18,6 @@ public class SearchInsertPosition {
             System.out.println(expectedPos);
             return expectedPos;
         }
+
     }
 }
