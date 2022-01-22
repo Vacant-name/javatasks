@@ -1,12 +1,24 @@
 package thread;
 
+import java.util.Scanner;
+
 public class MainThread {
     public static void main(String[] args) {
-        System.out.println("Main thread " + Thread.currentThread());
-        MyThread myThread = new MyThread();
-        Thread thread = new Thread(myThread);
-        System.out.println(thread.getName());
-        thread.start();
+//        MyThread myThread = new MyThread();
+//        myThread.start();
+//        MyThread myThread2 = new MyThread();
+//        myThread2.start();
+
+
+//        Thread thread = new Thread(new ExtendsFromRunnable());
+//        thread.start();
+//        System.out.println("Hello");
+
+        WithVolatile withVolatile = new WithVolatile();
+        withVolatile.start();
+        Scanner sc = new Scanner(System.in);
+        sc.nextLine();
+        withVolatile.shutdown();
     }
 }
 

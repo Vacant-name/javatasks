@@ -8,5 +8,6 @@ public class IntegerFalse {
         } else {
             System.out.println("Неравный");
         }
+
     }
 }
