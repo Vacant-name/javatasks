@@ -7,8 +7,14 @@ public class MainSynchronizedThreads {
         mainSynchronizedThreads.doWork();
     }
 
-    public synchronized void inc() {
-        count++;
+//    public synchronized void inc() {
+//        count++;
+//    }
+
+    public void inc() {
+        synchronized (this) {
+            count++;
+        }
     }
 
     public void doWork() throws InterruptedException {
