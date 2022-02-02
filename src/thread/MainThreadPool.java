@@ -11,7 +11,8 @@ public class MainThreadPool {
             executorService.submit(new ThreadPool(i));
         }
         executorService.shutdown();
-        System.out.println("all tasks submitted");
-        executorService.awaitTermination(1, TimeUnit.DAYS);
+
+
+        System.out.println(Thread.currentThread() + "all tasks submitted");
     }
 }

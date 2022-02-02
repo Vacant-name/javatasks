@@ -10,11 +10,6 @@ public class ThreadPool implements Runnable {
 
     @Override
     public void run() {
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        System.out.println("ThreadPool " + id + " was completed");
+        System.out.println(Thread.currentThread() + "ThreadPool " + id + " was completed");
     }
 }
