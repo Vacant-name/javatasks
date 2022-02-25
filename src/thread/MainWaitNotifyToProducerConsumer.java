@@ -1,14 +1,18 @@
 package thread;
 
-public class MainWaitNotify {
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class MainWaitNotifyToProducerConsumer {
+
     public static void main(String[] args) throws InterruptedException {
-        WaitNotify waitNotify = new WaitNotify();
+        ProducerConsumer pc = new ProducerConsumer();
 
         Thread thread1 = new Thread(new Runnable() {
             @Override
             public void run() {
                 try {
-                    waitNotify.produce();
+                    pc.produce();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -19,7 +23,7 @@ public class MainWaitNotify {
             @Override
             public void run() {
                 try {
-                    waitNotify.consume();
+                    pc.consume();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

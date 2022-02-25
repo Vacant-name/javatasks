@@ -12,7 +12,6 @@ public class MainThreadPool {
         }
         executorService.shutdown();
 
-
         System.out.println(Thread.currentThread() + "all tasks submitted");
     }
 }
