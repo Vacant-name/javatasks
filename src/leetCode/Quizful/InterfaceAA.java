@@ -1,4 +1,4 @@
-package leetCode;
+package leetCode.Quizful;
 
 public class InterfaceAA {
     public static void main(String[] argv){

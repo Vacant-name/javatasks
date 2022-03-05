@@ -1,4 +1,4 @@
-package leetCode;
+package leetCode.Quizful;
 
 public class MySwitch {
     public static void main(String[] args) {

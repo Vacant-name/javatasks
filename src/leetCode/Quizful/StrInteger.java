@@ -1,4 +1,4 @@
-package leetCode;
+package leetCode.Quizful;
 
 public class StrInteger {
     public static void main(String[] argv){

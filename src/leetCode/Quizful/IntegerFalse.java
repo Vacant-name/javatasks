@@ -1,4 +1,4 @@
-package leetCode;
+package leetCode.Quizful;
 
 public class IntegerFalse {
     public static void main(String[] argv){

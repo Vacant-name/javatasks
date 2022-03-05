@@ -1,4 +1,4 @@
-package leetCode;
+package leetCode.Quizful;
 
 public class MyThread extends Thread {
     String s;

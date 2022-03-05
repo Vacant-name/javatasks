@@ -49,11 +49,7 @@ public class AddBinary {
         System.out.println(Arrays.toString(bIntArr));
 
         int[] sumArr = new int[max];
-//        0 + 0 = 0,
-//        0 + 1 = 1,
-//        1 + 0 = 1,
-//        1 + 1 = 10,
-//        1 + 1 + 1 = 11
+
         int temp = 0;
         for (int i = 0; i < max; i++) {
             if (aIntArr[i] == 0 & bIntArr[i] == 0) {
