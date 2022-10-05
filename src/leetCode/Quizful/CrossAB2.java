@@ -1,6 +1,6 @@
 package leetCode.Quizful;
 
-class CrossAB {
+class CrossAB2 {
     int x = 1;
 
     public void printX() {
@@ -12,7 +12,7 @@ class CrossAB {
     }
 }
 
-class CrossBA extends CrossAB {
+class CrossBA2 extends CrossAB2 {
     int x = 2;
 
     public int getX() {
@@ -20,10 +20,9 @@ class CrossBA extends CrossAB {
     }
 }
 
- class Test {
+class Test2 {
     public static void main(String[] args) {
-        CrossAB classAB = new CrossBA();
-        classAB.printX();
+        CrossAB2 a = new CrossBA2();
+        System.out.println(a.x);
     }
 }
-

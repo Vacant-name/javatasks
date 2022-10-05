@@ -5,7 +5,7 @@ import java.io.*;
 public class FileWriterReader {
     public static void main(String[] args) throws IOException {
 
-        String path = "C:\\Users\\nikit\\Documents\\Repositories\\hard_units\\stream\\src\\fileWriterReader\\file.txt";
+        String path = "C:\\Users\\nikit\\Documents\\Repositories\\javatasks\\src\\stream\\fileWriterReader\\file.txt";
         String data = "oneFile";
 
         FileWriter fileWriter = new FileWriter(path);
